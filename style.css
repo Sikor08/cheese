@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.myWrap {
+  max-width: 1171px;
+  margin: auto;
+}
+
+.topLine {
+  background-color: #C2E8CE;
+  display: flex;
+}
+.topLine__text {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1F1F1F;
+}
+
+.headerWrap {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.mainNavList {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainNavItem__link {
+  font-family: "lato", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+}
+.mainNavItem__link1 {
+  margin-left: 60px;
+  margin-right: 71px;
+}
+.mainNavItem__link1, .mainNavItem__link4 {
+  margin-right: 70px;
+}
+.mainNavItem__link2 {
+  margin-right: 15px;
+}
+.mainNavItem__link3 {
+  margin-right: 101px;
+}
+.mainNavItem__link5 {
+  margin-right: 100px;
+}
+.mainNavItem__svg {
+  margin-right: 35px;
+}
+
+.navWrap {
+  border: 1px solid #BFBFBF;
+  border-radius: 100%;
+  padding: 18px;
+  display: flex;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+.cartQuantity {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  background-color: #FF8126;
+}
+
+.bannerWrap {
+  height: 500px;
+  padding-top: 130px;
+}
+
+.banner {
+  height: 500px;
+  background-image: url(/img/banner.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.banner__heading {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  color: #1F1F1F;
+  margin: 0;
+}
+.banner__text {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 39px;
+  color: #1F1F1F;
+  margin: 5px 0 40px 0;
+}
+.banner__btn {
+  background: #FF8126;
+  border: none;
+  padding: 12px 36px;
+  border-radius: 10px;
+}
+.banner__btn a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.latestOffersWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.latestOffers {
+  padding-top: 80px;
+}
+.latestOffers__heading {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #1F1F1F;
+}
+.latestOffers__heading_orange {
+  color: #FF8126;
+}/*# sourceMappingURL=style.css.map */

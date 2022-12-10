@@ -1,0 +1,145 @@
+@import'_variables';
+
+.myWrap{
+    max-width: $siteWidth;
+    margin: auto;
+
+}
+.topLine{
+    background-color: #C2E8CE;
+    display: flex;
+    &__text{
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1F1F1F;
+    }
+}
+
+.headerWrap{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.mainNavList{
+    display: flex;
+    list-style-type: none;
+    padding: 0; 
+}
+.mainNavItem{
+    &__link{
+    font-family: 'lato', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F1F1F;
+   }
+   &__link1{
+    margin-left: 60px;
+    margin-right: 71px;
+   }
+   &__link1, &__link4{
+    margin-right: 70px;
+   }
+   &__link2{
+    margin-right: 15px;
+   }
+   &__link3{
+    margin-right: 101px;
+   }
+   &__link5{
+    margin-right: 100px;
+   }
+   &__svg{
+    margin-right: 35px;
+   }
+}
+.navWrap{
+    border: 1px solid #BFBFBF;
+    border-radius: 100%;
+    padding: 18px;
+    display: flex;
+    position: relative;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+    &__img{
+
+}
+}
+.cartQuantity{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    background-color: $mainColor;
+}
+.bannerWrap{
+    height: 500px;
+    padding-top: 130px;
+}
+.banner{
+    height: 500px;
+    background-image: url(/img/banner.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    &__heading{
+        font-family: 'Cormorant';
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+        color: #1F1F1F;
+        margin: 0;
+    }
+    &__text{
+        font-family: 'Poppins';
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 39px;
+        color: #1F1F1F;
+        margin: 5px 0 40px 0;
+    }
+    &__btn{
+        background: $mainColor;
+        border: none;
+        padding: 12px 36px;
+        border-radius: 10px;
+        a{
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.latestOffersWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.latestOffers{
+    padding-top: 80px;
+    &__heading{
+        font-family: 'Cormorant';
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+color: #1F1F1F;
+    &_orange{
+        color: $mainColor;
+    }
+    }
+  
+}
