@@ -1,0 +1,42 @@
+.supriseWrap{
+    display: flex;
+    gap: 33px;
+}
+.suprise{
+    &__img{
+        width: 100%;
+    }
+}
+.surpriceContent{
+    @include heading;
+    padding-top: 54px;
+    &__heading{
+        max-width: 350px;
+        margin-bottom: 24px;
+    }
+    &__text{
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1F;
+    }
+    &__textTop{
+        margin-bottom: 13px;
+    }
+    &__textBottom{
+        margin-bottom: 28px;
+    }
+    &__btn{
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        background-color: $mainColor;
+        padding: 9px 31px;
+        border: none;
+        border-radius: 5px;
+    }
+}
+

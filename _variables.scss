@@ -5,3 +5,15 @@ $mainColor: #FF8126;
     margin: 0;
     padding: 0;
 }
+@mixin heading {
+    &__heading{
+        font-family: 'Cormorant';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #1F1F1F;
+    &_orange{
+        color: $mainColor;
+    }
+    }
+}
