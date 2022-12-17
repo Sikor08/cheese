@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .supriseWrap {
   display: flex;
   gap: 33px;
@@ -161,15 +165,13 @@
   font-size: 26px;
   line-height: 39px;
   color: #1F1F1F;
-  margin: 5px 0 26px 0;
+  margin: 5px 0 38px 0;
 }
 .banner__btn {
   background: #FF8126;
   border: none;
   padding: 12px 40px;
   border-radius: 10px;
-}
-.banner__btn a {
   text-decoration: none;
   font-family: "Poppins";
   font-weight: 500;
@@ -349,10 +351,14 @@
   display: flex;
   margin-bottom: 19px;
 }
-.whoMakesItem__svg {
-  background: #FF8126;
+.whoMakesItem__imgWrap {
+  background-color: #FF8126;
   border-radius: 100%;
-  padding: 7px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 15px;
 }
 .whoMakesItem__text {
@@ -430,4 +436,86 @@
   padding: 14px;
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.social {
+  padding: 60px 0;
+  display: flex;
+  background: url(/img/socialBackGround.png);
+  background-color: #ffe9d9;
+}
+.social__list {
+  display: flex;
+  gap: 30px;
+}
+.social__heading {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #1F1F1F;
+  margin-bottom: 32px;
+}
+
+.socialItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #FF8126;
+  color: wheat;
+}
+
+.footerWrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footerlogo {
+  margin-right: 81px;
+}
+
+.footerCategory__title {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #1F1F1F;
+  margin-bottom: 15px;
+}
+.footerCategory__list {
+  list-style-type: none;
+}
+.footerCategory__item {
+  margin-bottom: 11px;
+}
+.footerCategory__link {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #3D3D3D;
+}
+.footerCategory:first-child {
+  margin-right: 85px;
+}
+.footerCategory:nth-child(2) {
+  margin-right: 88px;
+}
+.footerCategory:nth-child(3) {
+  margin-right: 139px;
+}
+.footerCategory:nth-child(4) {
+  margin-right: 85px;
 }/*# sourceMappingURL=style.css.map */

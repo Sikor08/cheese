@@ -106,21 +106,20 @@
         font-size: 26px;
         line-height: 39px;
         color: #1F1F1F;
-        margin: 5px 0 26px 0;
+        margin: 5px 0 38px 0;
     }
     &__btn{
         background: $mainColor;
         border: none;
         padding: 12px 40px;
         border-radius: 10px;
-        a{
             text-decoration: none;
             font-family: 'Poppins';
             font-weight: 500;
             font-size: 18px;
             line-height: 27px;
             color: #FFFFFF;
-        }
+        
     }
 }
 
@@ -264,11 +263,18 @@
 .whoMakesItem{
     display: flex;
     margin-bottom: 19px;
-    &__svg{
-    background: $mainColor;
-    border-radius: 100%;
-    padding: 7px;
-    margin-right: 15px;
+    &__imgWrap{
+        background-color: $mainColor;
+        border-radius: 100%;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+    &__img{
+   
     }
     &__text{
         font-family: 'Poppins';
@@ -334,3 +340,93 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
+
+.social{
+    padding: 60px 0;
+    display: flex;
+    background: url(/img/socialBackGround.png);
+    background-color: lighten($mainColor, 35%);
+    &__list{
+        display: flex;
+        gap: 30px;
+    }
+    &__heading{
+        font-family: 'Cormorant';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: #1F1F1F;
+        margin-bottom: 32px;
+    }
+}
+
+.socialItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: $mainColor;
+    color: wheat;
+}
+
+.footerWrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+        
+}
+.footerlogo{
+    margin-right: 81px;
+}
+.footerCategory{
+    &__title{
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #1F1F1F;
+        margin-bottom: 15px;
+    }
+    &__list{
+        list-style-type: none;
+
+    }
+    &__item{
+        margin-bottom: 11px;
+        
+    }
+    &__link{
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #3D3D3D;
+    }
+    &:first-child{
+        margin-right: 85px;
+
+    }
+    &:nth-child(2){
+        margin-right: 88px;
+    }
+    &:nth-child(3){
+        margin-right: 139px;
+    }
+    &:nth-child(4){
+        margin-right: 85px;
+    }
+}
+
+
+
+
