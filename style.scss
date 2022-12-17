@@ -17,7 +17,9 @@
         color: #1F1F1F;
     }
 }
-
+.invisible{
+    display: none;
+}
 .headerWrap{
     display: flex;
     justify-content: space-between;
@@ -28,6 +30,9 @@
     display: flex;
     list-style-type: none;
     flex-grow: 1;
+    @media (max-width: 1100px) {
+        display: none;
+    }
 }
 .mainNavItem{
     
@@ -56,6 +61,7 @@
     margin-right: 71px;
 }
 }
+
 .navWrap{
     border: 1px solid #BFBFBF;
     border-radius: 100%;
@@ -66,9 +72,6 @@
 .nav{
     display: flex;
     gap: 10px;
-    &__img{
-
-}
 }
 .cartQuantity{
     position: absolute;
@@ -82,6 +85,21 @@
     padding: 2px;
     background-color: $mainColor;
     color: antiquewhite;
+}
+
+.burger{
+    display: none;
+    @media (max-width: 1100px) {
+        display: block;
+    }
+}
+.burgerList{
+    display: grid;
+    grid-template-columns: (repeat(auto-fit, minmax(150px, 1fr)));
+    @media (max-width: $mobileWidth) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 .bannerWrap{
     height: 500px;
