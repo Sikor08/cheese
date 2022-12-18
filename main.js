@@ -1,4 +1,4 @@
-const burgerIconEl = document.querySelector('.fa-burger');
+const burgerIconEl = document.querySelector('.fa-bars');
 
 const burgerListEl =document.querySelector('.burgerContent');
 

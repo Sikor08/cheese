@@ -23,3 +23,14 @@ ul{
     }
     }
 }
+@mixin navLinkStyle{
+    font-family: 'lato', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F1F1F;
+}
+.fa-bars{
+    color: $mainColor;
+}

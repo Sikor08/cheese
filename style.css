@@ -11,6 +11,10 @@ ul {
   list-style-type: none;
 }
 
+.fa-bars {
+  color: #FF8126;
+}
+
 .supriseWrap {
   display: flex;
   gap: 33px;
@@ -78,10 +82,6 @@ ul {
   font-size: 14px;
   line-height: 21px;
   color: #1F1F1F;
-}
-
-.invisible {
-  display: none;
 }
 
 .headerWrap {
@@ -163,15 +163,43 @@ ul {
   }
 }
 
+.invisible {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .burgerContent {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: #FF8126;
+    margin: 0 -15px;
+    padding: 15px;
+  }
+}
+
 .burgerList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 @media (max-width: 786px) {
   .burgerList {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    display: flex;
+    top: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
+}
+
+.burgerListItem__link {
+  font-family: "lato", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
 }
 
 .bannerWrap {
@@ -312,6 +340,11 @@ ul {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 786px) {
+  .whyChooseWrap {
+    text-align: center;
+  }
+}
 
 .whyChooseList {
   padding-top: 30px;
@@ -347,6 +380,11 @@ ul {
 .whoMakes {
   margin-bottom: 550px;
 }
+@media (max-width: 1100px) {
+  .whoMakes__img {
+    display: none;
+  }
+}
 
 .whoMakesWrap {
   padding-top: 51px;
@@ -372,6 +410,11 @@ ul {
 .whoMakesContent__heading_orange {
   margin-left: 10px;
 }
+@media (max-width: 1100px) {
+  .whoMakesContent__heading {
+    display: block;
+  }
+}
 .whoMakesContent__title {
   font-family: "Poppins";
   font-weight: 500;
@@ -380,10 +423,28 @@ ul {
   color: #1F1F1F;
   margin-bottom: 35px;
 }
+@media (max-width: 1100px) {
+  .whoMakesContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
 
 .whoMakesItem {
   display: flex;
   margin-bottom: 19px;
+}
+@media (max-width: 1100px) {
+  .whoMakesItem {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    justify-items: flex-start;
+    align-items: baseline;
+    text-align: left;
+  }
 }
 .whoMakesItem__imgWrap {
   background-color: #FF8126;
@@ -402,10 +463,6 @@ ul {
   line-height: 24px;
   color: #1F1F1F;
   max-width: 520px;
-}
-
-.whoMakesItem:last-child {
-  margin-bottom: 29px;
 }
 
 .whoMakes__btn {
