@@ -12,7 +12,7 @@ ul {
 }
 
 .fa-bars {
-  color: #FF8126;
+  color: #1c382c;
 }
 
 .supriseWrap {
@@ -40,7 +40,7 @@ ul {
   color: #1F1F1F;
 }
 .surpriceContent__heading_orange {
-  color: #FF8126;
+  color: #1c382c;
 }
 @media (max-width: 1100px) {
   .surpriceContent {
@@ -79,7 +79,7 @@ ul {
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
-  background-color: #FF8126;
+  background-color: #1c382c;
   padding: 9px 31px;
   border: none;
   border-radius: 5px;
@@ -108,11 +108,27 @@ ul {
   color: #1F1F1F;
 }
 
+.header {
+  background-color: #1c382c;
+}
+
 .headerWrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+}
+@media (max-width: 786px) {
+  .headerWrap {
+    justify-content: center;
+  }
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+.logo__img {
+  width: inherit;
 }
 
 .mainNavList {
@@ -154,14 +170,22 @@ ul {
 .navWrap {
   border: 1px solid #BFBFBF;
   border-radius: 100%;
-  padding: 14px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  width: 60px;
+  height: 60px;
 }
 
 .nav {
   display: flex;
   gap: 10px;
+}
+@media (max-width: 786px) {
+  .nav {
+    display: none;
+  }
 }
 
 .cartQuantity {
@@ -174,7 +198,7 @@ ul {
   display: flex;
   justify-content: center;
   padding: 2px;
-  background-color: #FF8126;
+  background-color: #1c382c;
   color: antiquewhite;
 }
 
@@ -183,7 +207,20 @@ ul {
 }
 @media (max-width: 1100px) {
   .burger {
-    display: block;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+  }
+}
+.burgerNav {
+  display: none;
+}
+@media (max-width: 786px) {
+  .burgerNav {
+    display: flex;
+    gap: 10px;
   }
 }
 
@@ -194,11 +231,19 @@ ul {
 @media (max-width: 1100px) {
   .burgerContent {
     position: absolute;
-    width: 100%;
+    top: 47px;
+    width: 40%;
     height: 500px;
-    background-color: #FF8126;
+    background-color: #1c382c;
     margin: 0 -15px;
     padding: 15px;
+  }
+}
+@media (max-width: 786px) {
+  .burgerContent {
+    top: 90px;
+    width: 100%;
+    height: 200px;
   }
 }
 
@@ -254,7 +299,7 @@ ul {
   margin: 5px 0 38px 0;
 }
 .banner__btn {
-  background: #FF8126;
+  background: #1c382c;
   border: none;
   padding: 12px 40px;
   border-radius: 10px;
@@ -284,7 +329,7 @@ ul {
   color: #1F1F1F;
 }
 .latestOffers__heading_orange {
-  color: #FF8126;
+  color: #1c382c;
 }
 
 .cardBox {
@@ -318,7 +363,7 @@ ul {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  color: #FF8126;
+  color: #1c382c;
   margin-bottom: 12px;
 }
 .cardItem__price_old {
@@ -337,7 +382,7 @@ ul {
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
-  background-color: #FF8126;
+  background-color: #1c382c;
   border: none;
   border-radius: 10px;
   margin: auto;
@@ -354,7 +399,7 @@ ul {
   color: #1F1F1F;
 }
 .whyChoose__heading_orange {
-  color: #FF8126;
+  color: #1c382c;
 }
 .whyChoose__heading {
   margin-bottom: 12px;
@@ -434,7 +479,7 @@ ul {
   color: #1F1F1F;
 }
 .whoMakesContent__heading_orange {
-  color: #FF8126;
+  color: #1c382c;
 }
 .whoMakesContent__heading {
   display: flex;
@@ -481,7 +526,7 @@ ul {
   }
 }
 .whoMakesItem__imgWrap {
-  background-color: #FF8126;
+  background-color: #1c382c;
   border-radius: 100%;
   width: 24px;
   height: 24px;
@@ -505,7 +550,7 @@ ul {
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
-  background-color: #FF8126;
+  background-color: #1c382c;
   border: none;
   border-radius: 5px;
   padding: 9px 32px;
@@ -528,7 +573,7 @@ ul {
   color: #1F1F1F;
 }
 .onInstagrammTop__heading_orange {
-  color: #FF8126;
+  color: #1c382c;
 }
 @media (max-width: 1100px) {
   .onInstagrammTop {
@@ -554,7 +599,7 @@ ul {
 }
 
 .onInstagrammSlider__arrow:hover {
-  background-color: #FF8126;
+  background-color: #1c382c;
   color: #FFFFFF;
   outline: none;
 }
@@ -586,7 +631,7 @@ ul {
   padding: 60px 0;
   display: flex;
   background: url(/img/socialBackGround.png);
-  background-color: #ffe9d9;
+  background-color: #5aad89;
 }
 .social__list {
   display: flex;
@@ -614,7 +659,7 @@ ul {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  background-color: #FF8126;
+  background-color: #1c382c;
   color: wheat;
 }
 
