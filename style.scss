@@ -272,17 +272,23 @@
 }
 .whoMakes{
     margin-bottom: 550px;
+    @media (max-width: 1100px) {
+        margin-bottom: 30px;
+    }
     &__img{
         @media (max-width: 1100px) {
             display: none;
         }
     }
+
 }
 .whoMakesWrap{
     padding-top: 51px;
     display: flex;
     justify-content: space-between;
-  
+    @media (max-width: 1100px) {
+        justify-content: center;
+    }
 
 }
 .whoMakesContent{
@@ -335,9 +341,6 @@
         margin-right: 15px;
      
     }
-    &__img{
-        
-    }
     &__text{
         font-family: 'Poppins';
         font-weight: 400;
@@ -363,13 +366,16 @@
 
 
 .onInstagramm{
-    padding: 76px;
+    padding: 76px 0;
 }
 .onInstagrammTop{
     @include heading;
     display: flex;
     justify-content: center;
     margin-bottom: 44px;
+    @media (max-width: 1100px) {
+        text-align: center;
+}
 }
 .onInstagrammSlider{
     display: flex;
@@ -380,7 +386,9 @@
         border-radius: 100%;
         padding: 14px;
         outline-color: #B2B2B2;
-       
+        @media (max-width: 1100px) {
+           display: none;
+        }
     }
 }
 .onInstagrammSlider__arrow:hover{
@@ -392,13 +400,20 @@
     flex-grow: 1;
     padding: 0px 23px;
     display: flex;
-    gap: 20px;
     justify-content: space-between;
+    @media (max-width: 1100px) {
+        flex-direction: column;
+}
 }
 .slideItem{
     padding: 14px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    &__img{
+        @media (max-width: 1100px) {
+            width: 100%;
+        }
+    }
 }
 
 .social{
@@ -409,6 +424,9 @@
     &__list{
         display: flex;
         gap: 30px;
+        @media (max-width: 1100px) {
+            flex-wrap: wrap;
+        }
     }
     &__heading{
         font-family: 'Cormorant';
@@ -421,7 +439,7 @@
     }
 }
 
-.socialItem{
+.socialItem__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -437,18 +455,29 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 60px 0;
+    @media (max-width: 1100px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footerContent{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-        
+    @media (max-width: 1100px) {
+     flex-direction: column;
+     text-align: center;
+    }
 }
 .footerlogo{
     margin-right: 81px;
+    @media (max-width: 1100px) {
+        margin: 0 0 30px 0
+    }
 }
 .footerCategory{
+  
     &__title{
         font-family: 'Poppins';
         font-weight: 500;
@@ -474,16 +503,27 @@
     }
     &:first-child{
         margin-right: 85px;
-
+        @media (max-width: 1100px) {
+            margin-right: 0;
+         }
     }
     &:nth-child(2){
         margin-right: 88px;
+        @media (max-width: 1100px) {
+            margin-right: 0;
+         }
     }
     &:nth-child(3){
         margin-right: 139px;
+        @media (max-width: 1100px) {
+            margin-right: 0;
+         }
     }
     &:nth-child(4){
         margin-right: 85px;
+        @media (max-width: 1100px) {
+            margin-right: 0;
+         }
     }
 }
 
